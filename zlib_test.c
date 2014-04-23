@@ -472,6 +472,7 @@ main(argc, argv)
 	if(ofp == NULL)
 	{
 		fprintf(stderr, "[Error] cannot open destination file: %s\n", dst_file);
+		fclose(ifp);
 		goto END_OF_PROGRAM;
 	}
 	
